@@ -1,0 +1,64 @@
+@keyframes appearing {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    color: #fff;
+  }
+}
+
+@keyframes margin {
+  0% {
+    margin-left: 30%;
+  }
+  100% {
+    margin-left: 0;
+  }
+}
+
+.content {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.welcome {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+  box-sizing: border-box;
+  line-height: 1;
+  overflow: hidden;
+}
+
+.welcome__welcome {
+  font-size: 80px;
+  margin: 0 0 10px;
+  color: #fff;
+  animation: appearing 1s, margin 1s;
+  text-shadow: 10px 10px 1px #333;
+}
+
+.welcome__header {
+  margin: 5px 0 0;
+  font-size: 140px;
+  white-space: nowrap;
+  color: #fff;
+  animation: appearing 1s, margin 2s;
+  text-shadow: 10px 10px 1px #333;
+}
+
+.welcome__header span {
+  color: transparent;
+  -webkit-text-stroke: 1px #fff;
+  animation: appearing 3s forwards;
+}
+
+.welcome__greeting {
+  color: #fff;
+  margin: 0;
+  font-size: 16px;
+}
