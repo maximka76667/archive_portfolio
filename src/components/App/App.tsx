@@ -10,6 +10,7 @@ function App() {
     <div className="app">
       <Header />
       <Routes>
+        <Route path="/about">about</Route>
         <Route path="/*" element={<Main />} />
       </Routes>
       <Footer />

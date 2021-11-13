@@ -39,7 +39,7 @@
   margin: 0 0 10px;
   color: #fff;
   animation: appearing 1s, margin 1s;
-  text-shadow: 10px 10px 1px #333;
+  text-shadow: 10px 10px 1px #369;
 }
 
 .welcome__header {
@@ -48,7 +48,7 @@
   white-space: nowrap;
   color: #fff;
   animation: appearing 1s, margin 2s;
-  text-shadow: 10px 10px 1px #333;
+  text-shadow: 10px 10px 1px #369;
 }
 
 .welcome__header span {
