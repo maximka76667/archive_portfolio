@@ -18,10 +18,6 @@
   padding: 30px;
 }
 
-.nav__item:not(:last-child) {
-  margin-right: 25px;
-}
-
 .nav__link {
   color: #fff;
   display: block;
@@ -30,6 +26,10 @@
 }
 
 .nav__link:hover {
-  transform: scale(1.5);
+  transform: scale(1.2);
+  text-shadow: 5px 5px 1px #369;
+}
+
+.nav__link_active {
   text-shadow: 5px 5px 1px #369;
 }

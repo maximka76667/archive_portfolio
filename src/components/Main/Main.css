@@ -39,7 +39,7 @@
   margin: 0 0 10px;
   color: #fff;
   animation: appearing 1s, margin 1s;
-  text-shadow: 10px 10px 1px #369;
+  text-shadow: 5px 5px 1px #369;
 }
 
 .welcome__header {
@@ -61,4 +61,60 @@
   color: #fff;
   margin: 0;
   font-size: 16px;
+}
+
+.works__container {
+  display: grid;
+  padding: 0;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.work {
+  display: block;
+  height: 500px;
+  width: 100%;
+  background-color: #111;
+  position: relative;
+  text-decoration: none;
+  color: #fff;
+}
+
+.work:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: all 0.3s;
+  margin: 100px 50px 0 0;
+}
+
+.work:hover:after {
+  background-color: rgba(211, 56, 198, 0.5);
+  margin: 0;
+}
+
+.work__info {
+  height: 100%;
+  padding: 0 20%;
+  opacity: 0;
+  transition: all 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.work:hover .work__info {
+  opacity: 1;
+}
+
+.work__name {
+  margin: 0 0 20px;
+  font-size: 40px;
+}
+
+.work__description {
+  margin: 0;
 }
