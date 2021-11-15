@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 100;
 }
 
 .nav__list {
@@ -26,10 +27,9 @@
 }
 
 .nav__link:hover {
-  transform: scale(1.2);
   text-shadow: 5px 5px 1px #369;
 }
 
 .nav__link_active {
-  text-shadow: 5px 5px 1px #369;
+  text-shadow: 5px 5px 1px orange;
 }
